@@ -1,0 +1,67 @@
+.footer {
+    border-top: 1px solid var(--main-red);
+    background-color: var(--main-dark-color);
+    padding: 25px;
+}
+
+.footer h4 {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Dancing script', cursive;
+    font-weight: normal;
+    font-size: 4vw;
+    color: #ffffff;
+}
+
+.contenedor__icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    padding: 18px;
+    width: 4.5vw;
+    height: 4.5vw;
+    fill: #fff;
+}
+
+.icons:hover {
+    fill: var(--main-red);
+    animation: crece__gira .5s forwards ease-in-out;
+}
+
+/* --------------------------------  MEDIA QUERIES  ------------------------------------------ */
+@media (max-width: 730px) {
+
+    .footer h4 {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .footer h4 {
+        padding: 10px;
+        font-size: 10vw;
+    }
+    
+    .icons {
+        padding: 18px;
+        width: 9.5vw;
+        height: 9.5vw;
+        fill: #fff;
+    }
+
+    @keyframes crece__gira {
+        from {
+            width: 9.5vw;
+            height: 9.5vw;
+            transform: rotate(0deg);
+        }
+        to {
+            width: 9.8vw;
+            height: 9.8vw;
+            transform: rotate(360deg);
+        }
+    }
+}

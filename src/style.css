@@ -1,0 +1,84 @@
+/* --------FUENTES--------- */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Annie+Use+Your+Telescope&family=Cabin+Sketch&family=Dancing+Script&family=Urbanist&display=swap');
+
+
+/* --------RESETs--------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* --------COLORES--------- */
+:root {
+    --main-black: rgb(12, 11, 11);
+    --main-dark-color: #252422;
+    --main-dark-grey: #403D39;
+    --main-medium-grey: #CCC5B9;
+    --main-light-grey: #FFFCF2;
+    --main-orange: #EB5E28;
+    --main-red: #BC2D11;
+}
+
+/* --------ANIMACIONES--------- */
+@keyframes crece__fonts {
+    from {
+        font-size: 18px;
+    }
+    to {
+        font-size: 20px;
+    }
+}
+
+@keyframes crece__gira {
+    from {
+        width: 4.5vw;
+        height: 4.5vw;
+        transform: rotate(0deg);
+    }
+    to {
+        width: 4.8vw;
+        height: 4.8vw;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes vibra {
+    0% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: rotate(-2deg);
+    }
+    80% {
+        transform: rotate(2deg);
+    }
+}
+
+@keyframes del__s {
+    from{
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+/* ----------(Fondo)--------- */
+.contenedor__fondo {
+    background-color: var(--main-dark-color);
+    background-image: url(./assets/fondo-pizarra.jpg);
+    background-size: cover;
+}

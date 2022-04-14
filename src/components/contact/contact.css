@@ -1,0 +1,144 @@
+.contacto {
+    padding-bottom: 200px;
+}
+
+.contacto h2 {
+    padding: 120px 0 25px;
+    text-align: center;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: normal;
+    color: rgb(248, 246, 242);
+    font-size: 75px;
+    opacity: .7;
+}
+
+.contenedor__contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor__contacto p {
+    margin: 5%;
+    width: 30%;
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: rgb(248, 246, 242);
+    font-size: 35px;
+    opacity: .7;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    margin: 5%;
+}
+
+.formulario input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    background-color: var(--main-dark-color);
+    border: none;
+    border: 1px var(--main-red) solid;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: normal;                
+    color: rgb(248, 246, 242);
+    font-size: 25px;
+}
+
+.formulario input::placeholder, textarea::placeholder {
+    color: rgb(219, 207, 207);
+}
+
+.formulario input:focus, textarea:focus {
+    border: none;
+    outline: 3px solid var(--main-red);
+    background-color: var(--main-dark-color);
+}
+
+.contenedor__checkbox {
+    display: flex;
+    align-items: baseline;
+}
+
+input[type=checkbox] {
+    width: 15%;
+}
+
+input[type=checkbox]:focus {
+    outline: none;
+    
+}
+
+.label__checkbox {
+    color: rgb(248, 246, 242);
+    font-family: Urbanist;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+button {
+    border: 1px solid var(--main-red);
+    background-color: var(--main-dark-color);
+    color: rgb(248, 246, 242);
+    font-family: Urbanist;
+    font-size: 18px;
+    padding: 7px;
+    width: 105%;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 3px solid var(--main-red);
+    background-color: var(--main-dark-grey);
+    color: rgb(248, 246, 242);
+    box-shadow: 1px 1px 14px var(--main-red);
+    animation: vibra .2s .3s ease-in-out, crece__fonts .2s ease-in-out forwards;
+}
+
+/* --------------------------------  MEDIA QUERIES  ------------------------------------------ */
+@media (max-width: 730px) {
+    .contacto h2 {
+        padding: 220px 0 30px;
+        font-size: 55px;
+    }
+    
+    .contenedor__contacto {
+        flex-direction: column;
+    }
+
+    .contenedor__contacto p {
+        margin: 5%;
+        width: 70%;
+        font-family: 'Annie Use Your Telescope', cursive;
+        color: rgb(248, 246, 242);
+        font-size: 35px;
+        opacity: .7;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .contacto h2 {
+        font-size: 45px;
+    }
+
+    .contenedor__contacto {
+        width: 95%;
+    }
+
+    .contenedor__contacto p {
+        text-align: justify;
+        width: 75%;
+        font-size: 27px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 7px;
+        width: 107%;
+    }
+}
